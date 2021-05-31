@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=author content='{{ site.me.name }}' />
+  <meta name='theme-color' content='#fff' />
+  <meta name='twitter:title' content="{{ page.title | xml_escape}}" />
+  {% if page.description %}<meta name=description content="{{ page.description | xml_escape}}" />
+  <meta name='twitter:description' content="{{ page.description | xml_escape}}" />
+  <meta name='og:description' content="{{ page.description | xml_escape}}" />
+  {% else %}<meta name=description content="{{ site.description | xml_escape }}" />{% endif %}
+  <meta name=viewport content='width=device-width,minimum-scale=1'>
+  <meta property='og:site_name' content="{{site.me.site_name}}"/>
+  <meta property='og:email' content="{{site.me.email}}"/>
+  <meta property='og:type' content=blog />
+  <meta property='twitter:account_id' content={{site.me.twitter_id}} />
+  {% if site.me.coil %}
+  <meta name="monetization" content="{{ site.me.coil_id }}">
+  {% endif %}
+  {% if page.image %}
+    <meta name='twitter:site' content="{{site.me.site_name}}" />
+    <meta name='twitter:creator' content="@{{ site.me.twitter }}" />
+    {% if page.categories contains "book" %}
+      <meta name='twitter:card' content=summary />{% else %}<meta name='twitter:card' content=summary_large_image />
+    {% endif %}
+    <meta property="og:image" content="{{site.url}}{{ page.image }}" />
+    <meta name=thumbnail content="{{site.url}}{{ page.image }}" />
+  {% endif %}
+  <script type='application/ld+json'>{"@context": "http://schema.org","@type": "CreativeWork",{% if page.image %}"image": "{{site.url}}{{ page.image }}",{% endif %}"author": "{{ site.me.name }}"}</script>
+  {% if page.categories contains "book" or page.path == "reading.html" %}
+    <link rel=alternate type='application/rss+xml' title="{{site.me.site_name}} - Reading" href="{{site.url}}/reading/rss.xml" />
+    <link rel=alternate type='application/atom+xml' title="{{site.me.site_name}} - Reading" href="{{site.url}}/reading/atom.xml" />
+  {% else %}
+    <link rel=alternate type='application/rss+xml' title="{{site.me.site_name}}" href="{{site.url}}/rss.xml" />
+    <link rel=alternate type='application/atom+xml' title="{{site.me.site_name}}" href="{{site.url}}/atom.xml" />
+  {% endif %}
+  <link rel=icon type=image/x-icon href=/css/favicon.png />{% if page.head %}{{ page.head }}{% endif %}
+  <style>{% include screen.css %}</style>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{site.me.site_name}}</title>
+  {% if page.path == "index.html" %}<link href='https://twitter.com/{{ site.me.twitter }}' rel=me />
+  <link href='https://github.com/{{ site.me.github }}' rel=me />
+  <link href='mailto:{{ site.me.email }}' rel=me />{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+</head>
+<body{% if page.class %} class='{{page.class}}'{% endif %}>
+  <div class='pad2y' style='position:relative'>
+    {% if page.topimage %}<img style='width:100%;' src='{{page.topimage}}' />{% endif %}
+    <div class='only-print'>
+      <h2>{{ site.me.name }}</h2>
+      <div style='margin-top:0;'>{{ site.me.email }}</div>
+    </div>
+    <nav class='header-wrap'>
+      <div class='header nu limiter no-print'>
+        <h1 style='line-height:1.6;font-size:1rem;margin:0 0 0.25em 0;'>{{site.me.name}}</h1>
+        <ul style='list-style:none;padding:0;margin:0;'>
+          <li><a href='/'>Writing</a>{% if page.path == 'index.html' or page.categories contains "blog" %}⇠{% endif %}</li>
+          <li><a href='/reading/'>Reading</a>{% if page.path == 'reading.html' or page.categories contains "book" %}⇠{% endif %}</li>
+          <li><a href='/about/'>About</a>{% if page.path == 'about.md' %}⇠{% endif %}</li>
+        </ul>
+      </div>
+    </nav>
+    <div class='pad2y limiter content {% if page.notitle %}notitle{% endif %}'>
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+---
+layout: default
+class: post
+---
+
+{% if page.notitle != true %}<h1>{{ page.title }}</h1>{% endif %}
+<div class='body'>{{ content }}</div>
+
+<div class='breaker'></div>
+
+<div class='pad2y'>
+  <p>
+    <postamble datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%B %e, %Y" }}
+    </postamble>
+    &nbsp;
+    <a href="https://twitter.com/intent/follow?screen_name={{site.me.twitter}}&user_id={{site.me.twitter_id}}" rel="nofollow" rel="noopener" target="_blank" title="Follow me on Twitter">
+      @{{site.me.twitter}}
+    </a>
+  </p>
+</div>

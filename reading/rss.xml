@@ -1,0 +1,26 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
+    <title>{{ site.me.site_name | xml_escape }} Reading</title>
+    <description>Books that I enjoy, usually</description>		
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+    <webfeeds:accentColor>00588F</webfeeds:accentColor>
+    <webfeeds:icon>{{site.url}}/css/logo-simple.svg</webfeeds:icon>
+    {% for post in site.categories.book limit:10 %}
+    <item>
+      <title>{{ post.title | xml_escape }} by {{ post.author | xml_escape }} ({{post.rating}})</title>
+      <dc:creator>{{ site.me.name }}</dc:creator>
+      <description>{{ post.content | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

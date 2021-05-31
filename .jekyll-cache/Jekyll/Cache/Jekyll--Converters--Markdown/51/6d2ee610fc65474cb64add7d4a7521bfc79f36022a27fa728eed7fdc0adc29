@@ -1,0 +1,15 @@
+I"œ<p>This is a book review! You can remove
+this portion of the site if youâ€™d like
+by just removing the element from the main
+menu. Adding metadata in these posts automatically
+will link to book sites: you can add these
+identifiers:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>isbn
+isbn13
+oclc
+goodreads_id
+lccn
+openlibrary
+</code></pre></div></div>
+:ET

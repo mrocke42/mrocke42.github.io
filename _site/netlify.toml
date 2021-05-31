@@ -1,0 +1,5 @@
+[build]
+  publish = "_site"
+  command = "jekyll build && yarn install && node optimize.js"
+[[plugins]]
+  package = "/plugins/cache"

@@ -1,0 +1,57 @@
+---
+layout: default
+class: post
+---
+
+<div itemscope itemtype="http://schema.org/Review">
+
+<h1 style='font-size: 30px;'>
+I read {{ page.title }} by {{ page.author }}
+on <span itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</span>
+</h1>
+
+{% if content %}
+<h3 itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">Review
+  <meta itemprop="worstRating" content="1">
+  <meta itemprop="ratingValue" content="{{page.rating}}">
+  <meta itemprop="bestRating" content="5">
+  <div
+    class='star'
+    class='value-title'
+    title='{{page.rating}}'
+    style='margin-left:10px;display:inline-block;background-size:15px 14px;height:14px;width:{{page.rating | times: 15}}px'></div>
+</h3>
+
+<div itemprop="description" class='body'>{{ content }}</div>
+{% endif %}
+
+<div class='breaker'></div>
+
+<h3>Details</h3>
+<ul itemprop="itemReviewed" itemscope itemtype="http://schema.org/Book">
+  <li><span itemprop=name>{{ page.title }}</span> by <span itemprop=author>{{ page.author }}</span></li>
+
+  {% if page.isbn or page.isbn13 %}
+  <li>ISBN: <span itemprop=isbn>{% if page.isbn13 %}{{page.isbn13}}{% else %}{{page.isbn13}}{% endif %}</span> (look up with
+  <a href='https://worldcat.org/isbn/{{page.isbn}}'>WorldCat</a>,
+  <a href='https://openlibrary.org/isbn/{{page.isbn}}'>Open Library</a>, or
+  <a href='https://www.indiebound.org/book/{{page.isbn13}}{% if site.indiebound_id %}?aff={{ site.indiebound_id }}{% endif %}'>buy locally with IndieBound</a>)</li>
+  {% endif %}
+  {% if page.bookshop and site.bookshop_id %}
+  <li>
+  <a href='https://bookshop.org/a/{{ site.bookshop_id }}/{{page.isbn13}}'>Bookshop (buy from local book stores, affiliate link)</a>
+  </li>
+  {% endif %}
+
+  <li>Published: <span itemprop=datePublished>{{page.published}}</span></li>
+  {% if page.publisher %}<li>Publisher: <span itemprop=publisher>{{page.publisher}}</span></li>{% endif %}
+</ul>
+
+  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="{{site.me.site_name}}">
+    <meta itemprop="url" content="{{site.url}}">
+  </div>
+  <meta itemprop="author" content="{{site.me.name}}">
+  <meta itemprop="url" content="{{ site.url }}{{ page.url }}">
+
+</div>

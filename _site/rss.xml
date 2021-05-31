@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
+    <title>https://mrocke42.github.io</title>
+    <description>JavaScript, math, maps, etc</description>		
+    <link>https://mrocke42.github.io</link>
+    <atom:link href="https://mrocke42.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <webfeeds:accentColor>00588F</webfeeds:accentColor>
+    <webfeeds:icon>https://mrocke42.github.io/css/logo-simple.svg</webfeeds:icon>
+    
+    <item>
+      <title>Post</title>
+      <dc:creator>mrocke42</dc:creator>
+      <description>&lt;p&gt;Here’s an example post! Some styling examples: Here’s a code snippet.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;codeSnippet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And a &lt;a href=&quot;https://google.com/&quot;&gt;link&lt;/a&gt; and some &lt;em&gt;styled&lt;/em&gt; &lt;strong&gt;text&lt;/strong&gt;. Here’s
+a blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Chastising the Spanish artist for painting unrepresentative cubistic abstractions, a layman withdrew a photograph of his wife from his pocket and held it up to Picasso with the admonition, “Why can’t you paint realistically, like that?” “Is that what your wife really looks like?” Picasso asked. “Yes,” replied the man. “Well, she’s very small, and quite flat.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tables look like this by default:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Count&lt;/th&gt;
+      &lt;th&gt;Thing&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;12&lt;/td&gt;
+      &lt;td&gt;Angry men&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Flew over the cuckoos nest&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0400</pubDate>
+      <link>https://mrocke42.github.io/2021/01/01/post.html</link>
+      <guid isPermaLink="true">https://mrocke42.github.io/2021/01/01/post.html</guid>
+    </item>
+    
+  </channel>
+</rss>

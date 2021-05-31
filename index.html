@@ -1,7 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World! Lorem Ipsum</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+class: post
+description: Your website
+---
+
+<div class='writing nu'>
+{% for post in site.categories.blog %}
+  <div><a title='#{{ forloop.rindex  }}' href='{{ post.url }}'>{{ post.title }}</a></div>
+  <time>{{ post.date | date: "%Y-%m-%d"  }}</time>
+{% endfor %}
+</div>

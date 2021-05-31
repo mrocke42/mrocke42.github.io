@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
+    <title>https://mrocke42.github.io Reading</title>
+    <description>Books that I enjoy, usually</description>		
+    <link>https://mrocke42.github.io</link>
+    <atom:link href="https://mrocke42.github.io/reading/rss.xml" rel="self" type="application/rss+xml" />
+    <webfeeds:accentColor>00588F</webfeeds:accentColor>
+    <webfeeds:icon>https://mrocke42.github.io/css/logo-simple.svg</webfeeds:icon>
+    
+    <item>
+      <title>Book by Some author (3)</title>
+      <dc:creator>mrocke42</dc:creator>
+      <description>&lt;p&gt;This is a book review! You can remove
+this portion of the site if you’d like
+by just removing the element from the main
+menu. Adding metadata in these posts automatically
+will link to book sites: you can add these
+identifiers:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;isbn
+isbn13
+oclc
+goodreads_id
+lccn
+openlibrary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0400</pubDate>
+      <link>https://mrocke42.github.io/2021/03/29/make.html</link>
+      <guid isPermaLink="true">https://mrocke42.github.io/2021/03/29/make.html</guid>
+    </item>
+    
+  </channel>
+</rss>

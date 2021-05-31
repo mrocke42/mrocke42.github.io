@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=author content='mrocke42' />
+  <meta name='theme-color' content='#fff' />
+  <meta name='twitter:title' content="About" />
+  <meta name=description content="" />
+  <meta name=viewport content='width=device-width,minimum-scale=1'>
+  <meta property='og:site_name' content="https://mrocke42.github.io"/>
+  <meta property='og:email' content=""/>
+  <meta property='og:type' content=blog />
+  <meta property='twitter:account_id' content= />
+  
+  
+  <script type='application/ld+json'>{"@context": "http://schema.org","@type": "CreativeWork","author": "mrocke42"}</script>
+  
+    <link rel=alternate type='application/rss+xml' title="https://mrocke42.github.io" href="https://mrocke42.github.io/rss.xml" />
+    <link rel=alternate type='application/atom+xml' title="https://mrocke42.github.io" href="https://mrocke42.github.io/atom.xml" />
+  
+  <link rel=icon type=image/x-icon href=/css/favicon.png />
+  <style>:root {
+  --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.star {
+  width: 13px;
+  height: 12px;
+  display: inline-block;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuMzA5IDkuMjJMMi40MDkgMTJsMS40NC00LjU2N0wwIDQuNTgzbDQuNzg4LS4wNDJMNi4zMDggMCA3LjgzIDQuNTRsNC43ODkuMDQ0LTMuODUgMi44NDlMMTAuMjA5IDEyeiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+");
+}
+
+body {
+  color: #111;
+  margin: 0px auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: var(--sans-font);
+}
+
+/* Print tweaks ------------------------------------------------------------- */
+.only-print {
+  display: none;
+}
+
+.notitle .body p:first-child {
+  margin-top: 0.25rem;
+}
+
+.body img {
+  width: 100%;
+  max-width: 640px;
+}
+
+/* Element styles ----------------------------------------------------------- */
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
+
+a {
+  color: #000;
+  text-decoration-skip-ink: auto;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #333;
+}
+
+ol,
+ul {
+  margin: 1rem 0;
+}
+
+ul ul {
+  margin: 0;
+}
+
+ol li ul {
+  margin: 5px 10px;
+}
+
+iframe {
+  border: 0;
+}
+
+small,
+.small {
+  font-size: 14px;
+}
+
+br {
+  line-height: 1em;
+}
+
+h1 a {
+  color: #111;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.004em;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.009em;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.009em;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+h5 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+blockquote {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+td {
+  vertical-align: top;
+}
+
+hr {
+  background: #000;
+  height: 1px;
+  border: 0;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.body th {
+  text-align: left;
+}
+
+.body td,
+.body th {
+  padding: 0.5rem;
+}
+
+.body td {
+  border: 1px solid #cfcfcf;
+}
+
+.limiter {
+  max-width: 640px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding --------------------------------------- */
+.pad2y {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+span.image-credit {
+  float: right;
+  margin: 0 0 10px 10px;
+  font-size: 12px;
+}
+
+span.image-credit:before {
+  content: "↑";
+  margin-right: 5px;
+}
+
+figcaption {
+  font-size: 11px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -1.2rem;
+}
+
+div.post blockquote p {
+  margin: 0;
+}
+
+/** Writing ----------------------------------------------------------------- */
+.writing,
+.books {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.writing {
+  grid-template-columns: 1fr min-content;
+}
+
+.books {
+  grid-template-columns: 1fr 0.75fr min-content 70px;
+}
+
+.writing a,
+.books a {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.writing > div,
+.books > div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.writing time,
+.books time {
+  padding-right: 0.25em;
+  color: #333;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.012em;
+  white-space: pre;
+}
+
+/** Responsive -------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+  .limiter {
+    width: auto;
+  }
+
+  .writing,
+  .books {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0px;
+  }
+
+  .writing div,
+  .books div {
+    white-space: normal;
+  }
+
+  .writing time,
+  .books div:nth-child(4n) {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .nu a {
+    text-decoration: none;
+  }
+
+  .nu a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-wrap {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+  }
+  .sigil {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    margin-right: 340px !important;
+    letter-spacing: -0.009em;
+  }
+  .content h1:first-child {
+    margin-top: 0;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .only-print {
+    display: block;
+  }
+  body {
+    margin: 0;
+  }
+  .limiter {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/** Code highlighting ------------------------------------------------------- */
+p code,
+pre code,
+li code,
+g.highlight,
+.code {
+  font-family: var(--mono-font);
+}
+
+p code {
+  font-size: 90%;
+}
+
+pre code {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.highlight,
+blockquote {
+  overflow-x: auto;
+  padding: 10px 20px;
+  margin: 0;
+  background: #fff;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* pygments theme. does not support generics. .highlight class omitted */
+.highlight {
+  margin: 10px 0;
+}
+
+.highlight .hll {
+  background-color: #ffffcc;
+}
+
+.c, /* Comment */
+.cm, /* Comment.Multiline */
+.cp, /* Comment.Preproc */
+.cs, /* Comment.Special */
+.c1 {
+  color: #999988;
+} /* Comment.Single */
+
+.o, /* Operator */
+.ow, /* Operator.Word */
+.ge {
+  color: #000000;
+} /* Generic.Emph */
+
+.kc, /* Keyword.Constant */
+.kd, /* Keyword.Declaration */
+.kn, /* Keyword.Namespace */
+.kp, /* Keyword.Pseudo */
+.kr, /* Keyword.Reserved */
+.kt {
+  color: #445588;
+} /* Keyword.Type */
+
+.err {
+  color: #a61717;
+} /* Error */
+
+.m {
+  color: #007f7f;
+} /* Literal.Number */
+.s {
+  color: #d01040;
+} /* Literal.String */
+
+.na, /* Name.Attribute */
+.nb, /* Name.Builtin */
+.nc, /* Name.Class */
+.no, /* Name.Constant */
+.nd, /* Name.Decorator */
+.ni, /* Name.Entity */
+.ne, /* Name.Exception */
+.nf, /* Name.Function */
+.nn, /* Name.Namespace */
+.nt, /* Name.Tag */
+.nl {
+  color: #990000;
+} /* Name.Label */
+
+.k, /* Keyword */
+.nv {
+  color: #008080;
+} /* Name.Variable */
+
+.mf, /* Literal.Number.Float */
+.mh, /* Literal.Number.Hex */
+.mi, /* Literal.Number.Integer */
+.mo {
+  color: #009999;
+} /* Literal.Number.Oct */
+
+.sb, /* Literal.String.Backtick */
+.sc, /* Literal.String.Char */
+.sd, /* Literal.String.Doc */
+.s2, /* Literal.String.Double */
+.se, /* Literal.String.Escape */
+.sh, /* Literal.String.Heredoc */
+.s1, /* Literal.String.Single */
+.si, /* Literal.String.Interpol */
+.ss, /* Literal.String.Symbol */
+.bp, /* Name.Builtin.Pseudo */
+.sx {
+  color: #d01040;
+} /* Literal.String.Other */
+
+.sr, /* Literal.String.Regex */
+.vc, /* Name.Variable.Class */
+.vg, /* Name.Variable.Global */
+.vi, /* Name.Variable.Instance */
+.il {
+  color: #009999;
+} /* Literal.Number.Integer.Long */
+</style>
+  <title>About - https://mrocke42.github.io</title>
+  
+  <link rel="canonical" href="https://mrocke42.github.io/about/">
+</head>
+<body>
+  <div class='pad2y' style='position:relative'>
+    
+    <div class='only-print'>
+      <h2>mrocke42</h2>
+      <div style='margin-top:0;'></div>
+    </div>
+    <nav class='header-wrap'>
+      <div class='header nu limiter no-print'>
+        <h1 style='line-height:1.6;font-size:1rem;margin:0 0 0.25em 0;'>mrocke42</h1>
+        <ul style='list-style:none;padding:0;margin:0;'>
+          <li><a href='/'>Writing</a></li>
+          <li><a href='/reading/'>Reading</a></li>
+          <li><a href='/about/'>About</a>⇠</li>
+        </ul>
+      </div>
+    </nav>
+    <div class='pad2y limiter content '>
+      <div class='body'><div><img src="/images/about-flowers.jpg" alt="Flowers" /></div>
+
+<!-- above is a tiny little tweak! p tags have a little of top space.
+if you want your image on the about page to be flush with the name
+bit of the website, wrap the img in a div! -->
+
+<p>This is where about information lives. You
+might put a photo of yourself here, or some information
+about your work history, etc.</p>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>

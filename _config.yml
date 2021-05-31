@@ -1,0 +1,37 @@
+destination: ./_site
+lsi: false
+port: 4000
+permalink: /:year/:month/:day/:title.html
+url: https://mrocke42.github.io
+include: ["_redirects", ".well-known", "_headers"]
+# Add
+#
+# Get a bookshop id at Bookshop.org, affiliates
+# bookshop_id:
+#
+# Get a bookshop id at Indiebound.org, affiliates
+# https://www.indiebound.org/affiliate
+# indiebound_id:
+me:
+  description: JavaScript, math, maps, etc
+  name: mrocke42
+  site_name: https://mrocke42.github.io
+  #github: you
+  #twitter: you
+  # Get your twitter ID: https://tweeterid.com/
+  #twitter_id: 42
+  #email: you@you.com
+  # Get a coil id, like $ilp.uphold.com/Kk2HbEYgFH6K
+  # at https://coil.com/ if you want to monetize through Coil
+  # coil_id:
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+exclude:
+  - README.md
+  - node_modules
+  - package.json
+  - yarn.lock
+  - Gemfile
+  - _scripts

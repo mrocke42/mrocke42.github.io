@@ -1,0 +1,19 @@
+---
+layout: default
+title: Reading
+permalink: reading/index.html
+description: 'Tom MacWright’s collection of book reviews'
+---
+
+<div class='books nu'>
+{% for book in site.categories.book %}
+  <div>
+    <a href='{{ book.url }}'>{{ book.title }}</a>
+  </div>
+  <div>{{ book.author }}</div>
+  <time>{{ book.date | date: "%Y-%m-%d" }}</time>
+  <div>
+    <div class='star' style='width:{{book.rating | times: 13}}px'></div>
+  </div>
+{% endfor %}
+</div>

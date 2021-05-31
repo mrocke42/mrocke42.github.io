@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^10.3.0",
+    "hasha": "^5.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^7.1.0",
+    "js-yaml": "^3.13.1",
+    "magic-string": "^0.25.6",
+    "rehype": "^10.0.0",
+    "remark": "^12.0.0",
+    "remark-frontmatter": "^2.0.0",
+    "sharp": "^0.25.2",
+    "slugg": "^1.2.1",
+    "unist-util-select": "^3.0.0"
+  }
+}
