@@ -1,0 +1,35 @@
+I"<p>This is my first official post to the internet.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">codeSnippet</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">42</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And a <a href="https://google.com/">link</a> and some <em>styled</em> <strong>text</strong>. Here’s
+a blockquote:</p>
+
+<blockquote>
+  <p>Chastising the Spanish artist for painting unrepresentative cubistic abstractions, a layman withdrew a photograph of his wife from his pocket and held it up to Picasso with the admonition, “Why can’t you paint realistically, like that?” “Is that what your wife really looks like?” Picasso asked. “Yes,” replied the man. “Well, she’s very small, and quite flat.”</p>
+</blockquote>
+
+<p>Tables look like this by default:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Count</th>
+      <th>Thing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>Angry men</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Flew over the cuckoos nest</td>
+    </tr>
+  </tbody>
+</table>
+:ET

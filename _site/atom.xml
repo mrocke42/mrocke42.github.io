@@ -3,7 +3,7 @@
   <title>mrocke42</title>
   <link href="https://mrocke42.github.io/atom.xml" rel="self"/>
   <link href="https://mrocke42.github.io/"/>
-  <updated>2021-05-31T11:23:41+04:00</updated>
+  <updated>2021-05-31T11:41:41+04:00</updated>
   <subtitle>JavaScript, math, maps, etc</subtitle>
   <icon>https://mrocke42.github.io/css/favicon.png</icon>
   <id>https://mrocke42.github.io/</id>
@@ -11,6 +11,52 @@
     <name>mrocke42</name>
     <email></email>
   </author>
+  
+  <entry>
+    <title>First Post</title>
+    <link href="https://mrocke42.github.io/2021/05/31/first.html"/>
+    <updated>2021-05-31T00:00:00+04:00</updated>
+    <id>https://mrocke42.github.io/2021/05/31/first</id>
+    <content type="html">&lt;p&gt;This is my first official post to the internet.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;codeSnippet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And a &lt;a href=&quot;https://google.com/&quot;&gt;link&lt;/a&gt; and some &lt;em&gt;styled&lt;/em&gt; &lt;strong&gt;text&lt;/strong&gt;. Here’s
+a blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Chastising the Spanish artist for painting unrepresentative cubistic abstractions, a layman withdrew a photograph of his wife from his pocket and held it up to Picasso with the admonition, “Why can’t you paint realistically, like that?” “Is that what your wife really looks like?” Picasso asked. “Yes,” replied the man. “Well, she’s very small, and quite flat.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tables look like this by default:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Count&lt;/th&gt;
+      &lt;th&gt;Thing&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;12&lt;/td&gt;
+      &lt;td&gt;Angry men&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Flew over the cuckoos nest&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    <author>
+      <name>mrocke42</name>
+      <uri>https://mrocke42.github.io/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>Post</title>

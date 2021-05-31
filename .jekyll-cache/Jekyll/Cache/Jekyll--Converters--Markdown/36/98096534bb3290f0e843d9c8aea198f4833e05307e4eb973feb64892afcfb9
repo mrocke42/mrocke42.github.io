@@ -1,0 +1,8 @@
+I"+<p>#&lt;div&gt;<img src="/images/about-flowers.jpg" alt="Flowers" />&lt;/div&gt;</p>
+
+<!-- above is a tiny little tweak! p tags have a little of top space.
+if you want your image on the about page to be flush with the name
+bit of the website, wrap the img in a div! -->
+
+<p>Written by Mrocke42.</p>
+:ET

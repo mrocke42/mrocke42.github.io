@@ -12,6 +12,29 @@
     <webfeeds:icon>https://mrocke42.github.io/css/logo-simple.svg</webfeeds:icon>
     
     <item>
+      <title>Three Body Problem by Some author (5)</title>
+      <dc:creator>mrocke42</dc:creator>
+      <description>&lt;p&gt;This is a book review! You can remove
+this portion of the site if you’d like
+by just removing the element from the main
+menu. Adding metadata in these posts automatically
+will link to book sites: you can add these
+identifiers:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;isbn
+isbn13
+oclc
+goodreads_id
+lccn
+openlibrary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0400</pubDate>
+      <link>https://mrocke42.github.io/2021/05/01/threebodyproblem.html</link>
+      <guid isPermaLink="true">https://mrocke42.github.io/2021/05/01/threebodyproblem.html</guid>
+    </item>
+    
+    <item>
       <title>Book by Some author (3)</title>
       <dc:creator>mrocke42</dc:creator>
       <description>&lt;p&gt;This is a book review! You can remove
